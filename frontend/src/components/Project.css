@@ -1,0 +1,31 @@
+.containerMain {
+    height: fit-content;
+    width: 70%;
+    background-color: beige;
+    border: 1px solid black;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    flex-basis: 5%;
+}
+
+#projectTitle {
+    display: flex;
+    margin: 4px;
+    padding-left: 10px;
+    border-left: 2px dotted gainsboro;
+    border-right: 2px dotted gainsboro;
+    flex-basis: 75%;
+    justify-content: flex-start;
+}
+
+.projectOptionsList {
+    flex-basis: 20%;
+}
+
+.projectOption {
+    padding: 0px 10px;
+}
