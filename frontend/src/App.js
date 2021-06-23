@@ -26,7 +26,7 @@ function App() {
     {projects_list}
     </center>
     <center>
-      <button id="buttonAddProject" onClick={add_project}>Add Project</button>
+      <button id="buttonAddProject" className="btn btn-info" onClick={add_project}>+ Add Project</button>
     </center>
     <Footer/>
     </>
