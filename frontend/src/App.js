@@ -22,7 +22,9 @@ function App() {
       <h1>Project-ToDo</h1>
     </div>
     <Header/>
+    <center>
     {projects_list}
+    </center>
     <center>
       <button id="buttonAddProject" onClick={add_project}>Add Project</button>
     </center>
