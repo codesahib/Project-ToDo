@@ -2,19 +2,24 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
+import React, { useState } from 'react';
 
 function App() {
-  var projects_list = [
+  const [projects_list, setProjects] = useState([
     {"id":1,"title":"Project 1"},
     {"id":2,"title":"Project 2"},
-    {"id":3,"title":"Project 3"}];
+    {"id":3,"title":"Project 3"}
+    ]);
 
   function add_project(project){
     console.log("Add Project",project);
   }
 
   const delete_project = (project) =>{
-    console.log("Add Project",project);
+    // alert("Are you sure?")
+    setProjects(projects_list.filter((p)=>{
+      return p!==project;
+    }))
   }
 
   return (
