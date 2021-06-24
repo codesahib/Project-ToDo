@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
+import NewProject from './components/NewProject'
+
 import React, { useState } from 'react';
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
       <h1>Project-ToDo</h1>
     </div>
     <Header/>
+    <NewProject/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} add_project={add_project}/>
     <Footer/>
     </>

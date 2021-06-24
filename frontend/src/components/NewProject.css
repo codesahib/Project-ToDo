@@ -1,0 +1,22 @@
+#formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    border: 1px solid burlywood;
+    padding:20px;
+    margin: 10px 0px
+}
+
+form * {
+    width: 100%;
+}
+
+button {
+    width: 10%;
+}
