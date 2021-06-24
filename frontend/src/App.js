@@ -4,7 +4,6 @@ import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
 
 function App() {
-  let i=1;
   var projects_list = [
     {"id":1,"title":"Project 1"},
     {"id":2,"title":"Project 2"},

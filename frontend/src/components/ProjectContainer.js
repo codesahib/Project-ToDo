@@ -7,7 +7,7 @@ export default function ProjectContainer({projects,delete_project,add_project}) 
             <center>
                 {projects.map((project)=> {
                     return(
-                        <Project project={project} delete_project={delete_project}/>
+                        <Project project={project} key={project.id} delete_project={delete_project}/>
                     )
                 })}
             </center>
