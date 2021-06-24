@@ -13,8 +13,16 @@ function App() {
     {"id":3,"title":"Project 3"}
     ]);
 
-  function add_project(project){
-    console.log("Add Project",project);
+  function add_project(title, desc){
+    let id = projects_list.length === 0 ? 1:projects_list[projects_list.length - 1].id + 1;
+    console.log(id)
+
+    const newProject = {
+      id: id,
+      title: title
+    }
+
+    setProjects([...projects_list,newProject]);
   }
 
   const delete_project = (project) =>{
@@ -30,7 +38,7 @@ function App() {
       <h1>Project-ToDo</h1>
     </div>
     <Header/>
-    <NewProject/>
+    <NewProject add_project={add_project}/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} add_project={add_project}/>
     <Footer/>
     </>
