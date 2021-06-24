@@ -7,11 +7,14 @@ export default function ProjectContainer({projects,delete_project,add_project}) 
     }
 
     return (
-        <div>
+        <div className="container">
             <center>
                 { projects.length ===0? <h2 id="textNoProjects" style={textNoProjectsStyle}>No Projects Recorded</h2> :projects.map((project)=> {
                     return(
-                        <Project project={project} key={project.id} delete_project={delete_project}/>
+                        <>
+                            <Project project={project} key={project.id} delete_project={delete_project}/>
+                            <hr></hr>
+                        </>
                     )
                 })}
             </center>
