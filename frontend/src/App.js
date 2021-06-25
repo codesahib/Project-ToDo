@@ -2,17 +2,19 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
-import NewProject from './components/NewProject'
+import NewProject from './components/Modals/NewProject'
 
 import React, { useState } from 'react';
 
 function App() {
-  const [modalDisplay, setModalDisplay] = useState(false);
+  const [newProjModal, setnewProjModal] = useState(false);
+  
+  
 
   const [projects_list, setProjects] = useState([
-    {"id":1,"title":"Project 1"},
-    {"id":2,"title":"Project 2"},
-    {"id":3,"title":"Project 3"}
+    {"id":1,"title":"Learn React"},
+    {"id":2,"title":"Learn MongoDB"},
+    {"id":3,"title":"Complete MERN Project"}
     ]);
 
   function add_project(title, desc){
@@ -24,7 +26,7 @@ function App() {
     }
 
     setProjects([...projects_list,newProject]);
-    setModalDisplay(false)
+    setnewProjModal(false)
   }
 
   const delete_project = (project) =>{
@@ -33,14 +35,18 @@ function App() {
     }))
   }
 
+  const change_project = (project) => {
+
+  }
+
   return (
     <>
     <div className="App">
       <h1>Project-ToDo</h1>
     </div>
     <Header/>
-    <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setModalDisplay}/>
-    {modalDisplay && <NewProject add_project={add_project} show_modal={setModalDisplay}/> }
+    <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setnewProjModal}/>
+    {newProjModal && <NewProject add_project={add_project} show_modal={setnewProjModal}/> }
     {/* <Footer/> */}
     </>
   );
