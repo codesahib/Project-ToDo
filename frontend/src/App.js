@@ -7,6 +7,8 @@ import NewProject from './components/NewProject'
 import React, { useState } from 'react';
 
 function App() {
+  const [modalDisplay, setModalDisplay] = useState(false);
+
   const [projects_list, setProjects] = useState([
     {"id":1,"title":"Project 1"},
     {"id":2,"title":"Project 2"},
@@ -15,7 +17,6 @@ function App() {
 
   function add_project(title, desc){
     let id = projects_list.length === 0 ? 1:projects_list[projects_list.length - 1].id + 1;
-    console.log(id)
 
     const newProject = {
       id: id,
@@ -23,10 +24,10 @@ function App() {
     }
 
     setProjects([...projects_list,newProject]);
+    setModalDisplay(false)
   }
 
   const delete_project = (project) =>{
-    // alert("Are you sure?")
     setProjects(projects_list.filter((p)=>{
       return p!==project;
     }))
@@ -38,9 +39,9 @@ function App() {
       <h1>Project-ToDo</h1>
     </div>
     <Header/>
-    <NewProject add_project={add_project}/>
-    <ProjectContainer projects={projects_list} delete_project={delete_project} add_project={add_project}/>
-    <Footer/>
+    <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setModalDisplay}/>
+    {modalDisplay && <NewProject add_project={add_project} show_modal={setModalDisplay}/> }
+    {/* <Footer/> */}
     </>
   );
 }

@@ -1,22 +1,40 @@
 #formContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.781);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 70%;
+    height: fit-content;
     align-items: center;
+    background-color: ghostwhite;
     border: 1px solid burlywood;
     padding:20px;
     margin: 10px 0px
 }
 
-form * {
+.form-group {
+    width: 70%;
+}
+
+.form-group * {
     width: 100%;
 }
 
-button {
-    width: 10%;
+.formButton {
+    width: 15%;
+    margin: auto;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
 }
