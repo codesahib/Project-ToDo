@@ -1,0 +1,8 @@
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: inherit;
+    margin-top: 0px;
+    border: 1px solid gold;
+}
