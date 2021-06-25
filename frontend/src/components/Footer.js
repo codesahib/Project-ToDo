@@ -3,7 +3,7 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <div className="mainContainer">
+        <div className="footerContainer">
             Footer Component
         </div>
     )
