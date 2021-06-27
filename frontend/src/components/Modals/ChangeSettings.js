@@ -7,6 +7,7 @@ export default function ChangeSettings(props) {
     const submit = (e) => {
         e.preventDefault(); // Avoid page reload
         thisProject.title = thisTitle;
+        props.updateProject(thisProject);
         props.show_settings(false)
     }
 
