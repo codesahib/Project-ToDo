@@ -4,18 +4,14 @@ import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
 import NewProject from './components/Modals/NewProject'
 
+import Data from './data/projects.json'
+
 import React, { useState } from 'react';
 
 function App() {
   const [newProjModal, setnewProjModal] = useState(false);
   
-  
-
-  const [projects_list, setProjects] = useState([
-    {"id":1,"title":"Learn React"},
-    {"id":2,"title":"Learn MongoDB"},
-    {"id":3,"title":"Complete MERN Project"}
-    ]);
+  const [projects_list, setProjects] = useState(Data);
 
   function add_project(title, desc){
     let id = projects_list.length === 0 ? 1:projects_list[projects_list.length - 1].id + 1;
