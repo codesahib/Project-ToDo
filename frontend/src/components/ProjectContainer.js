@@ -13,13 +13,10 @@ export default function ProjectContainer(props) {
         "alignSelf": "center",
     }
     return (
-        <div className="container" style={{display:"flex", "flexDirection":"column"}}>
+        <div className="container" style={{display:"flex", "flexDirection":"column", "marginTop": "30px"}}>
             { props.projects.length === 0? <h2 id="textNoProjects" style={textNoProjectsStyle}>No Projects Recorded</h2> : props.projects.map((project)=> {
                 return(
-                    <div key={project.id}>
-                        <Project project={project} delete_project={props.delete_project}/>
-                        <hr></hr>
-                    </div>
+                    <Project key={project.id} project={project} delete_project={props.delete_project}/>
                 )
             })}
             <button style={buttonAddProjectStyle} id="buttonAddProject" className="btn btn-info" onClick={() => {props.show_modal(true)}}>+ Add Project</button>
