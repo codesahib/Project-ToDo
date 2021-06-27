@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ProjectContainer from './components/ProjectContainer'
 import NewProject from './components/Modals/NewProject'
@@ -31,17 +31,13 @@ function App() {
     }))
   }
 
-  const change_project = (project) => {
-
-  }
-
   return (
     <>
     <div className="App-header">
       <h1>Project-ToDo</h1>
       <i>by Gursahib Singh</i>
     </div>
-    <Header/>
+    <Navbar/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setnewProjModal}/>
     {newProjModal && <NewProject add_project={add_project} show_modal={setnewProjModal}/> }
     {/* <Footer/> */}
