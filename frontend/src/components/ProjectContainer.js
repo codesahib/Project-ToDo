@@ -14,12 +14,12 @@ export default function ProjectContainer(props) {
     }
     return (
         <div className="container" style={{display:"flex", "flexDirection":"column"}}>
-            { props.projects.length ===0? <h2 id="textNoProjects" style={textNoProjectsStyle}>No Projects Recorded</h2> : props.projects.map((project)=> {
+            { props.projects.length === 0? <h2 id="textNoProjects" style={textNoProjectsStyle}>No Projects Recorded</h2> : props.projects.map((project)=> {
                 return(
-                    <>
-                        <Project project={project} key={project.id} delete_project={props.delete_project}/>
+                    <div key={project.id}>
+                        <Project project={project} delete_project={props.delete_project}/>
                         <hr></hr>
-                    </>
+                    </div>
                 )
             })}
             <button style={buttonAddProjectStyle} id="buttonAddProject" className="btn btn-info" onClick={() => {props.show_modal(true)}}>+ Add Project</button>
