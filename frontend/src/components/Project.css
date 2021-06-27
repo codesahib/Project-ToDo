@@ -1,11 +1,29 @@
-#projectDisplay {
+#project {
     height: fit-content;
-    /* width: 70%; */
-    background-color: beige;
-    border: 1px solid black;
-    margin: 10px 0px 0px 0px;
+    background-color: #E0E0E0;
+    /* border: 1px solid #F1FAFF; */
+    box-shadow: 0px 0px 5px 1px #BABABA;
+    border-radius: 10px;
+    margin: 15px 0px;
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#projectSummary {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+}
+
+.projectOptionsList {
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.projectOption {
+    padding: 0px 10px;
 }
 
 input {
@@ -16,16 +34,9 @@ input {
     display: flex;
     margin: 4px;
     padding-left: 10px;
-    border-left: 2px dotted gainsboro;
-    border-right: 2px dotted gainsboro;
+    border-left: 2px dotted #344765;
+    border-right: 2px dotted #344765;
     flex-basis: 75%;
     justify-content: flex-start;
 }
 
-.projectOptionsList {
-    flex-basis: 20%;
-}
-
-.projectOption {
-    padding: 0px 10px;
-}
