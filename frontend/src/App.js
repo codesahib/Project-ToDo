@@ -37,8 +37,9 @@ function App() {
 
   return (
     <>
-    <div className="App">
+    <div className="App-header">
       <h1>Project-ToDo</h1>
+      <i>by Gursahib Singh</i>
     </div>
     <Header/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setnewProjModal}/>
