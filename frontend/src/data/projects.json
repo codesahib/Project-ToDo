@@ -6,12 +6,12 @@
         "tasks": [
             {
                 "t_id": 1,
-                "task": "Learn Routing",
+                "title": "Learn Routing",
                 "Notes": "Haven't started"
             },
             {
                 "t_id": 2,
-                "task": "Learn Api",
+                "title": "Learn Api",
                 "Notes": "Haven't started"
             }
         ]
@@ -23,7 +23,7 @@
         "tasks": [
             {
                 "t_id": 1,
-                "task": "Learn Basics",
+                "title": "Learn Basics",
                 "Notes": "Haven't started"
             }
         ]
@@ -35,7 +35,7 @@
         "tasks": [
             {
                 "t_id": 1,
-                "task": "Learn Basics",
+                "title": "Learn Basics",
                 "Notes": "Haven't started"
             }
         ]

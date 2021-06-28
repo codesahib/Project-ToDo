@@ -1,0 +1,30 @@
+#task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.tasksOptionsList {
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.taskOption {
+    padding: 0px 10px;
+}
+
+input {
+    flex-basis: 5%;
+}
+
+#taskTitle {
+    display: flex;
+    margin: 4px;
+    padding-left: 10px;
+    border-left: 2px dotted #344765;
+    border-right: 2px dotted #344765;
+    flex-basis: 75%;
+    justify-content: flex-start;
+}

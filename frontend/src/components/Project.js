@@ -20,7 +20,7 @@ export default function Project({project,delete_project}) {
                     <i className="fa fa-list-alt projectOption"></i>
                     <i className="fa fa-trash projectOption" onClick={()=>{delete_project(proj)}}></i>
                     {
-                        taskContainer == false ? <i className="fa fa-chevron-down projectOption" 
+                        taskContainer === false ? <i className="fa fa-chevron-down projectOption" 
                         onClick={
                             ()=>{setTaskContainer(true)}
                         }></i> : <i className="fa fa-chevron-up projectOption"
@@ -30,7 +30,7 @@ export default function Project({project,delete_project}) {
                     }
                 </div>
             </div>
-            {taskContainer && <TaskContainer project={proj}/> }
+            {taskContainer && <TaskContainer tasks={proj.tasks}/> }
         </div>
         </>
     )
