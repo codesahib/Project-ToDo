@@ -19,7 +19,15 @@ export default function Project({project,delete_project}) {
                     <i className="fa fa-gear projectOption" onClick={()=>{setSettingModal(true)}}></i>
                     <i className="fa fa-list-alt projectOption"></i>
                     <i className="fa fa-trash projectOption" onClick={()=>{delete_project(proj)}}></i>
-                    <i className="fa fa-chevron-down projectOption" onClick={()=>{setTaskContainer(!taskContainer)}}></i>
+                    {
+                        taskContainer == false ? <i className="fa fa-chevron-down projectOption" 
+                        onClick={
+                            ()=>{setTaskContainer(true)}
+                        }></i> : <i className="fa fa-chevron-up projectOption"
+                        onClick={
+                            ()=>{setTaskContainer(false)}
+                        }></i>
+                    }
                 </div>
             </div>
             {taskContainer && <TaskContainer project={proj}/> }
