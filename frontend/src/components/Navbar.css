@@ -1,3 +1,7 @@
 nav {
     background-color: #c3c6cc;
 }
+
+nav button {
+    background-color: #344765 !important;
+}

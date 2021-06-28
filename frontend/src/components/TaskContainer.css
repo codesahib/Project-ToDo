@@ -5,5 +5,15 @@
     width: inherit;
     margin-top: 20px;
     border: 1px solid black;
-    padding: 30px 200px;
+    background-color: #282c34;
+    /* margin: 30px 100px; */
+    padding: 20px 150px
+}
+
+#buttonAddTask{
+    margin-top: 30px;
+    background-color: rgb(250,250,250);
+    color: #344765;
+    font-weight: 500;
+    font-size: 15px;
 }

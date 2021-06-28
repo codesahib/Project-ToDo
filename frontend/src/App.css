@@ -16,9 +16,5 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-button {
-  background-color: #344765 !important;
+  color: rgb(250, 250, 250);
 }
