@@ -18,7 +18,7 @@ export default function TaskContainer(props) {
                     )
                 })
             }
-            <button style={buttonAddTaskStyle} id="buttonAddTask" className="btn btn-info">+ Add Task</button>
+            <button style={buttonAddTaskStyle} id="buttonAddTask" className="btn btn-info" onClick={()=>{props.show_modal(true)}}>+ Add Task</button>
         </div>
     )
 }

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './Project.css'
 import ChangeProjectSettings from './Modals/ChangeProjectSettings'
 import TaskContainer from './TaskContainer'
+import NewTask from './Modals/NewTask';
 
 export default function Project({project,delete_project}) {
+    const [taskModal, setTaskModal] = useState(false)
     const [settingModal, setSettingModal] = useState(false);
     const [taskContainer, setTaskContainer] = useState(false);
     const [proj, setProj] = useState(project);
@@ -13,6 +15,18 @@ export default function Project({project,delete_project}) {
         setTasksList(tasksList.filter((t) => {
             return t !== task;
         }))
+    }
+
+    const add_task = (title) => {
+        let t_id = tasksList.length === 0 ? 1:tasksList[tasksList.length - 1].id + 1;
+
+        const newTask = {
+            t_id : t_id,
+            title: title
+        }
+
+        setTasksList([...tasksList,newTask]);
+        setTaskModal(false)
     }
 
     return (
@@ -37,8 +51,9 @@ export default function Project({project,delete_project}) {
                     }
                 </div>
             </div>
-            {taskContainer && <TaskContainer tasks={tasksList} delete_task={delete_task}/> }
+            {taskContainer && <TaskContainer tasks={tasksList} delete_task={delete_task} show_modal={setTaskModal}/> }
         </div>
+        {taskModal && <NewTask add_task={add_task} show_modal={setTaskModal}/>}
         </>
     )
 }
