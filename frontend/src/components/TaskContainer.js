@@ -2,7 +2,7 @@ import React from 'react'
 import Task from './Task'
 import './TaskContainer.css'
 
-export default function TaskContainer({tasks}) {
+export default function TaskContainer(props) {
     let buttonAddTaskStyle= {
         display: "flex",
         "width": "fit-content",
@@ -12,9 +12,9 @@ export default function TaskContainer({tasks}) {
     return (
         <div id="taskContainer">
             {
-                tasks.length === 0 ? <h2>No Tasks Recorded</h2> : tasks.map((task) => {
+                props.tasks.length === 0 ? <h2 id="textNoTasks">No Tasks Recorded</h2> : props.tasks.map((task) => {
                     return(
-                        <Task task={task}/>
+                        <Task key={task.t_id} task={task} delete_task={props.delete_task}/>
                     )
                 })
             }

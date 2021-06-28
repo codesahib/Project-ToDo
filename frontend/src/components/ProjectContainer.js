@@ -11,7 +11,7 @@ export default function ProjectContainer(props) {
         display: "flex",
         "width": "fit-content",
         "alignSelf": "center",
-        "background-color": "#344765"
+        "backgroundColor": "#344765"
     }
     return (
         <div className="container" style={{display:"flex", "flexDirection":"column", "marginTop": "30px"}}>

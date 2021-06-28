@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import './Project.css'
-import ChangeSettings from './Modals/ChangeSettings'
+import ChangeProjectSettings from './Modals/ChangeProjectSettings'
 import TaskContainer from './TaskContainer'
 
 export default function Project({project,delete_project}) {
     const [settingModal, setSettingModal] = useState(false);
     const [taskContainer, setTaskContainer] = useState(false);
     const [proj, setProj] = useState(project);
+    const [tasksList, setTasksList] = useState(project.tasks);
+
+    const delete_task = (task) => {
+        setTasksList(tasksList.filter((t) => {
+            return t !== task;
+        }))
+    }
 
     return (
         <>
-        {settingModal && <ChangeSettings show_settings={setSettingModal} project={proj} updateProject={setProj}/> }
+        {settingModal && <ChangeProjectSettings show_settings={setSettingModal} project={proj} updateProject={setProj}/> }
         <div id="project">
             <div id="projectSummary">
                 <input type="checkbox"></input>
@@ -30,7 +37,7 @@ export default function Project({project,delete_project}) {
                     }
                 </div>
             </div>
-            {taskContainer && <TaskContainer tasks={proj.tasks}/> }
+            {taskContainer && <TaskContainer tasks={tasksList} delete_task={delete_task}/> }
         </div>
         </>
     )

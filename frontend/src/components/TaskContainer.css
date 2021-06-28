@@ -17,3 +17,9 @@
     font-weight: 500;
     font-size: 15px;
 }
+
+#textNoTasks {
+    padding: 20px;
+    text-align: center;
+    color: rgb(250,250,250);
+}
