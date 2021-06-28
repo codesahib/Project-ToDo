@@ -16,10 +16,11 @@ form {
     width: 70%;
     height: fit-content;
     align-items: center;
-    background-color: ghostwhite;
+    background-color: #282c34;
     border: 1px solid burlywood;
     padding:20px;
-    margin: 10px 0px
+    margin: 10px 0px;
+    color: rgb(250,250,250);
 }
 
 .form-group {
