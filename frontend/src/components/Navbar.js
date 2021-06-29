@@ -1,8 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Navbar.css'
+import Login from './Modals/Login'
 
-export default function Header() {
+export default function Navbar({user,setUser}) {
+    const [loginScreen, setLoginScreen] = useState(false);
+    const login = ()=>{
+        console.log("login")
+        setLoginScreen(true)
+    }
+    
+    const logout = ()=>{
+        console.log("logout")
+    }
+
+
     return (
+        <>
         <div>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="#">Project-ToDo</a>
@@ -24,9 +37,13 @@ export default function Header() {
                         <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form> */}
                     &nbsp;&nbsp;
-                    <button className="btn btn-info my-2 my-sm-0">Login</button>
+                    { user === ""? <button className="btn btn-info my-2 my-sm-0" onClick={login}>Login</button> :
+                    <><p>Hi {user}</p><button className="btn btn-info my-2 my-sm-0" onClick={logout}>Logout</button> </>
+                    }
                 </div>
                 </nav>
         </div>
+        {loginScreen && <Login show_modal={setLoginScreen}/>}
+        </>
     )
 }

@@ -9,8 +9,9 @@ import Data from './data/projects.json'
 import React, { useState } from 'react';
 
 function App() {
+  const [user, setUser] = useState("");
   const [newProjModal, setnewProjModal] = useState(false);
-  
+
   const [projects_list, setProjects] = useState(Data);
 
   function add_project(title, desc){
@@ -37,7 +38,7 @@ function App() {
       <h1>Project-ToDo</h1>
       <i>by Gursahib Singh</i>
     </div>
-    <Navbar/>
+    <Navbar setUser={setUser} user={user}/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setnewProjModal}/>
     {newProjModal && <NewProject add_project={add_project} show_modal={setnewProjModal}/> }
     {/* <Footer/> */}
