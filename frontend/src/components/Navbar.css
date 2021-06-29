@@ -1,7 +1,7 @@
 nav {
-    background-color: #c3c6cc;
+    background-color: var(--clr-navbar);
 }
 
 nav button {
-    background-color: #344765 !important;
+    background-color: var(--secondary-dark) !important;
 }

@@ -1,8 +1,8 @@
 #project {
     height: fit-content;
-    background-color: #E0E0E0;
+    background-color: var(--clr-project);
     /* border: 1px solid #F1FAFF; */
-    box-shadow: 0px 0px 5px 1px #616161;
+    box-shadow: 0px 0px 5px 1px var(--clr-project-shadow);
     border-radius: 10px;
     margin: 15px 0px;
     display: flex;
@@ -34,8 +34,8 @@ input {
     display: flex;
     margin: 4px;
     padding-left: 10px;
-    border-left: 2px dotted #344765;
-    border-right: 2px dotted #344765;
+    border-left: 2px dotted var(--primary-dark);
+    border-right: 2px dotted var(--primary-dark);
     flex-basis: 75%;
     justify-content: flex-start;
 }

@@ -14,5 +14,5 @@
     display: flex;
     width: fit-content;
     align-self: center;
-    background-color: #344765;
+    background-color: var(--secondary-dark);
 }

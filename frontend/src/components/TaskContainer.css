@@ -4,8 +4,8 @@
     height: fit-content;
     width: inherit;
     margin-top: 20px;
-    border: 1px solid black;
-    background-color: #282c34;
+    border: 1px solid var(--primary-dark);
+    background-color: var(--primary-dark);
     /* margin: 30px 100px; */
     padding: 20px 150px;
     border-bottom-left-radius: 10px;
@@ -14,8 +14,8 @@
 
 #buttonAddTask{
     margin-top: 30px;
-    background-color: rgb(250,250,250);
-    color: #344765;
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
     font-weight: 500;
     font-size: 15px;
 }
@@ -23,5 +23,5 @@
 #textNoTasks {
     padding: 20px;
     text-align: center;
-    color: rgb(250,250,250);
+    color: var(--primary-light);
 }

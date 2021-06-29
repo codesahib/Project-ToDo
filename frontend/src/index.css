@@ -1,3 +1,26 @@
+:root {
+  --primary-dark: #282c34;
+  --primary-light: #fafafa;
+
+  --secondary-dark: #344765;
+
+  --clr-navbar: #c3c6cc;
+
+  --clr-red: #bb3b35;
+
+  --clr-project: #e0e0e0;
+  --clr-project-shadow: #616161;
+
+  --clr-task: #babaab;
+  --clr-task-shadow: #3b3b36;
+
+  --clr-modal-background: rgba(220, 220, 220, 0.781)
+}
+
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +28,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--primary-light);
 }
 
 code {

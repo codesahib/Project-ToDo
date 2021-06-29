@@ -9,16 +9,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--primary-dark);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(250, 250, 250);
+  color: var(--primary-light);
 }
 
 .fa-trash{
-  color:#bb3b35;
+  color: var(--clr-red);
 }
