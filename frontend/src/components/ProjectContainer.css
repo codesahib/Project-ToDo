@@ -1,0 +1,18 @@
+#projectContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px 50px;
+}
+
+#textNoProjects {
+    padding: 20px;
+    text-align: center;
+}
+
+#buttonAddProject {
+    display: flex;
+    width: fit-content;
+    align-self: center;
+    background-color: #344765;
+}
