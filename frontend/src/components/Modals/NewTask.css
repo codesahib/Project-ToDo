@@ -17,9 +17,9 @@ form {
     height: fit-content;
     align-items: center;
     background-color: var(--primary-dark);
-    border: 1px solid var(--clr-task);
-    padding:20px;
-    margin: 10px 0px;
+    border: 0.0625rem solid var(--clr-task);
+    padding: 1.25rem;
+    margin: 0.625rem 0rem;
     color: var(--primary-light);
 }
 

@@ -2,9 +2,9 @@
     height: fit-content;
     background-color: var(--clr-project);
     /* border: 1px solid #F1FAFF; */
-    box-shadow: 0px 0px 5px 1px var(--clr-project-shadow);
-    border-radius: 10px;
-    margin: 15px 0px;
+    box-shadow: 0rem 0rem 0.3125rem 0.0625rem var(--clr-project-shadow);
+    border-radius: 0.625rem;
+    margin: 0.9375rem 0rem;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -23,7 +23,7 @@
 }
 
 .projectOption {
-    padding: 0px 10px;
+    padding: 0rem 0.625rem;
 }
 
 input {
@@ -32,10 +32,10 @@ input {
 
 #projectTitle {
     display: flex;
-    margin: 4px;
-    padding-left: 10px;
-    border-left: 2px dotted var(--primary-dark);
-    border-right: 2px dotted var(--primary-dark);
+    margin: 0.25rem;
+    padding-left: 0.625rem;
+    border-left: 0.125rem dotted var(--primary-dark);
+    border-right: 0.125rem dotted var(--primary-dark);
     flex-basis: 75%;
     justify-content: flex-start;
 }

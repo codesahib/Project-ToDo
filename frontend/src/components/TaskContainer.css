@@ -3,25 +3,25 @@
     flex-direction: column;
     height: fit-content;
     width: inherit;
-    margin-top: 20px;
-    border: 1px solid var(--primary-dark);
+    margin-top: 1.25rem;
+    border: 0.0625rem solid var(--primary-dark);
     background-color: var(--primary-dark);
     /* margin: 30px 100px; */
-    padding: 20px 150px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 1.25rem 9.375rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 #buttonAddTask{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     background-color: var(--primary-light);
     color: var(--secondary-dark);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 #textNoTasks {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     color: var(--primary-light);
 }

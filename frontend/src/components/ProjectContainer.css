@@ -1,12 +1,12 @@
 #projectContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    padding: 10px 50px;
+    margin-top: 1.875rem;
+    padding: 0.625rem 3.125rem;
 }
 
 #textNoProjects {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
