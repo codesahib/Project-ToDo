@@ -19,7 +19,9 @@ function App() {
 
     const newProject = {
       id: id,
-      title: title
+      title: title,
+      description: desc,
+      tasks: []
     }
 
     setProjects([...projects_list,newProject]);
