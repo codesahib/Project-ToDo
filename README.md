@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# First React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project-ToDo
 
-## Available Scripts
+### Motivation
+There are todo list app available for a single tasks. But this web app will be a todo list to track projects. Each project can then have it's own set of tasks.
 
-In the project directory, you can run:
+### Objective
+To learn React.js library with a hands-on project
 
-### `npm start`
+### Learnings
+1. Setting up react up using **Node.js**.
+2. React Components.
+3. Communication between parent and child components using **props**.
+4. React Hooks: **useState**.
+5. Loading **Modals** to get user data and then storing in local JSON.
+6. Styling using inline, external CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Screenshots
+1. Main Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a href="url"><img src="frontend/img/Main Page.png" align="center" height="230" width="450" margin="10 5" ></a>
 
-### `npm test`
+2. Add a new Project 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a href="url"><img src="frontend/img/New Project.png" align="center" height="230" width="450" margin="10 5" ></a>
 
-### `npm run build`
+3. Edit existing project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a href="url"><img src="frontend/img/Edit Project.png" align="center" height="230" width="450" margin="10 5" ></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Show tasks in a project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="url"><img src="frontend/img/Show Tasks.png" align="center" height="230" width="450" margin="10 5" ></a>
 
-### `npm run eject`
+5. Add a new task
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<a href="url"><img src="frontend/img/New Task.png" align="center" height="230" width="450" margin="10 5" ></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Edit task notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="url"><img src="frontend/img/Task Notes.png" align="center" height="230" width="450" margin="10 5" ></a>
