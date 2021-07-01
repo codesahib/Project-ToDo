@@ -34,7 +34,7 @@ export default function Project({project,delete_project}) {
         {settingModal && <ChangeProjectSettings show_settings={setSettingModal} project={proj} updateProject={setProj}/> }
         <div id="project">
             <div id="projectSummary">
-                <input type="checkbox"></input>
+                <input type="checkbox" class="projectCheckbox"></input>
                 <h5 id="projectTitle">{proj.title}</h5>
                 <div className="projectOptionsList">
                     <i className="fa fa-gear projectOption" onClick={()=>{setSettingModal(true)}}></i>

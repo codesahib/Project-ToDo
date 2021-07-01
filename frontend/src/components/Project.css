@@ -26,8 +26,10 @@
     padding: 0rem 0.625rem;
 }
 
-input {
+.projectCheckbox {
     flex-basis: 5%;
+    height: 0.875rem;
+    width: 3.75rem;
 }
 
 #projectTitle {

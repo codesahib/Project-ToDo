@@ -18,8 +18,10 @@
     padding: 0rem 0.625rem;
 }
 
-input {
+.taskCheckbox {
     flex-basis: 5%;
+    height: 0.875rem;
+    width: 3.75rem;
 }
 
 #taskTitle {

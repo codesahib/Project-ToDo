@@ -35,3 +35,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (max-width: 960px) {
+  html{
+      font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html{
+      font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  html{
+      font-size: 40%;
+  }
+  .projectOption, .taskOption{
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .projectOption, .taskOption{
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+}
