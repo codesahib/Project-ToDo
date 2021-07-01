@@ -2,17 +2,22 @@
     {
         "id":1,
         "title":"Learn React",
-        "description": "This is required to level up the Web Development Game",
+        "description": "This is required to level up the Web Development Game.",
         "tasks": [
             {
                 "t_id": 1,
                 "title": "Learn Routing",
-                "Notes": "Haven't started"
+                "notes": "Haven't started"
             },
             {
                 "t_id": 2,
                 "title": "Learn Api",
-                "Notes": "Haven't started"
+                "notes": "Haven't started"
+            },
+            {
+                "t_id": 3,
+                "title": "Learn Authentication using Firebase",
+                "notes": "Haven't started"
             }
         ]
     },
@@ -24,7 +29,7 @@
             {
                 "t_id": 1,
                 "title": "Learn Basics",
-                "Notes": "Haven't started"
+                "notes": "Haven't started"
             }
         ]
     },
@@ -36,7 +41,7 @@
             {
                 "t_id": 1,
                 "title": "Learn Basics",
-                "Notes": "Haven't started"
+                "notes": "Haven't started"
             }
         ]
     }
