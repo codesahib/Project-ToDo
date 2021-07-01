@@ -26,6 +26,10 @@
     padding: 0rem 0.625rem;
 }
 
+.projectOption:hover{
+    cursor: pointer;
+}
+
 .projectCheckbox {
     flex-basis: 5%;
     height: 0.875rem;
@@ -42,3 +46,20 @@
     justify-content: flex-start;
 }
 
+.projectDescriptionContainer {
+    display: flex;
+    width: 60%;
+    margin: 0.3125rem 0rem;
+    height: fit-content;
+    background-color: var(--primary-light);
+    border-radius: 0.325rem;
+    align-self: center;
+    padding: 0.0625rem 0.625rem;
+    background-color: var(--primary-dark);
+}
+
+.projectDescriptionContainer p {
+    color: var(--primary-light);
+    margin: 0rem;
+    font-size: 1.25rem;
+}

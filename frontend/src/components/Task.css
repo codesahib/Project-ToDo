@@ -18,6 +18,10 @@
     padding: 0rem 0.625rem;
 }
 
+.taskOption:hover{
+    cursor: pointer;
+}
+
 .taskCheckbox {
     flex-basis: 5%;
     height: 0.875rem;

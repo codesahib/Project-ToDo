@@ -10,7 +10,7 @@ export default function Task({task,delete_task}) {
         <>
         {settingModal && <ChangeTaskSettings show_settings={setSettingModal} task={t} updateTask={setT}/> }
         <div id="task">
-            <input type="checkbox" class="taskCheckbox"></input>
+            <input type="checkbox" className="taskCheckbox"></input>
             <h5 id="taskTitle">{t.title}</h5>
             <div className="taskOptionsList">
                 <i className="fa fa-gear taskOption" onClick={()=>{setSettingModal(true)}}></i>
