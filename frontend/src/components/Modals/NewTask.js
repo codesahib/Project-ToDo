@@ -7,11 +7,10 @@ export default function NewTask(props) {
 
     const submit = (e) => {
         e.preventDefault(); // Avoid page reload
-        if(!title || !notes){
-            alert("Title or notes are not defined");
+        if(!title){
+            alert("Title is not defined");
             return;
         }
-        setTitle(""); setNotes("");
         props.add_task(title,notes);
     } 
 
@@ -24,7 +23,7 @@ export default function NewTask(props) {
                 </div>
                 <div className="form-group">
                     <label htmlFor="notes">Task Notes</label>
-                    <input type="text" value={notes} onChange={(e)=>{setNotes(e.target.value)}} className="form-control" id="inputNotes" placeholder="Notes"/>
+                    <textarea value={notes} onChange={(e)=>{setNotes(e.target.value)}} className="form-control" id="inputNotes" placeholder="Notes"/>
                 </div>
                 <div className="form-group" id="buttonContainer">
                     <button type="cancel" className="btn btn-danger formButton" onClick={()=>{props.show_modal(false)}}>Cancel</button>

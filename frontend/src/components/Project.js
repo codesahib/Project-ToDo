@@ -18,12 +18,13 @@ export default function Project({project,delete_project}) {
         }))
     }
 
-    const add_task = (title) => {
+    const add_task = (title,notes) => {
         let t_id = tasksList.length === 0 ? 1:tasksList[tasksList.length - 1].id + 1;
 
         const newTask = {
             t_id : t_id,
-            title: title
+            title: title,
+            notes: notes
         }
 
         setTasksList([...tasksList,newTask]);
