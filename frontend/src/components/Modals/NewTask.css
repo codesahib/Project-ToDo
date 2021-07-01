@@ -32,8 +32,11 @@ form {
 }
 
 .formButton {
-    width: 15%;
     margin: auto;
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 #buttonContainer {
