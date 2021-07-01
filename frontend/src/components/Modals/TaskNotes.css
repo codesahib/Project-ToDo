@@ -1,0 +1,45 @@
+#formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-modal-background);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    align-items: center;
+    background-color: var(--primary-dark);
+    border: 0.0625rem solid var(--clr-task);
+    padding: 1.25rem;
+    margin: 0.625rem 0rem;
+    color: var(--primary-light);
+}
+
+.form-group {
+    width: 90%;
+}
+
+.form-group * {
+    width: 100%;
+}
+
+.formButton {
+    margin: auto;
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
