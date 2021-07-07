@@ -1,12 +1,25 @@
+// Connect the DB and start server
+
+import app from "./server.js"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 
 dotenv.config()
 
+const port = process.env.PORT || 8000
+
 // Connecting DB
 mongoose.connect(process.env.RESTREVIEWS_DB_URI,{ useNewUrlParser: true })
-.then(()=>{console.log("Database Connection Successfull")})
-.catch((err)=> {console.log("Error Connecting to DB. Error:"+ err)})
+.then(()=>{
+    console.log("Database Connection Successful")
+    app.listen(port, ()=>{
+        console.log(`listening on port ${port}`)
+    })
+})
+.catch((err)=> {
+    console.log("****** Error Connecting to DB. Error: "+ err)
+    process.exit(1)
+})
 
 // Define Schema
 const projectSchema = new mongoose.Schema({
@@ -51,4 +64,4 @@ const createProject = async () => {
     }
 }
 
-createProject()
+// createProject()
