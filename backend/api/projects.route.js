@@ -3,7 +3,6 @@ import ProjectsCtrl from "./projects.controller.js"
 
 const router = express.Router()
 
-// router.route("/").get(ProjectsCtrl.apiGetProjects)
-router.route("/").get((req,res)=>{res.send("API")})
+router.route("/").get(ProjectsCtrl.apiGetProjects)
 
 export default router

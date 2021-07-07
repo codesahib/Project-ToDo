@@ -3,6 +3,7 @@
 import app from "./server.js"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
+import ProjectsDAO from "./dao/projectsDAO.js"
 
 dotenv.config()
 
@@ -10,8 +11,9 @@ const port = process.env.PORT || 8000
 
 // Connecting DB
 mongoose.connect(process.env.RESTREVIEWS_DB_URI,{ useNewUrlParser: true })
-.then(()=>{
-    console.log("Database Connection Successful")
+.then(async (client)=>{
+    console.log("Database Connection Successful");
+    await ProjectsDAO.injectDB(client);
     app.listen(port, ()=>{
         console.log(`listening on port ${port}`)
     })
@@ -21,26 +23,6 @@ mongoose.connect(process.env.RESTREVIEWS_DB_URI,{ useNewUrlParser: true })
     process.exit(1)
 })
 
-// Define Schema
-const projectSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true
-    },
-    description: String,
-    tasks:[
-        {
-            title: {
-                type: String,
-                required: true
-            },
-            notes: String
-        }
-    ]
-})
-
-// Create Model for CRUD operations
-const Projects = new mongoose.model("Project",projectSchema)
 
 const createProject = async () => {
     try {
