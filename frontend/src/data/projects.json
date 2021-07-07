@@ -1,45 +1,45 @@
 [
     {
-        "id":1,
+        "_id":1,
         "title":"Learn React",
         "description": "This is required to level up the Web Development Game.",
         "tasks": [
             {
-                "t_id": 1,
+                "_id": 1,
                 "title": "Learn Routing",
                 "notes": "Haven't started"
             },
             {
-                "t_id": 2,
+                "_id": 2,
                 "title": "Learn Api",
                 "notes": "Haven't started"
             },
             {
-                "t_id": 3,
+                "_id": 3,
                 "title": "Learn Authentication using Firebase",
                 "notes": "Haven't started"
             }
         ]
     },
     {
-        "id":2,
+        "_id":2,
         "title":"Learn MongoDB",
         "description": "To learn a modern and trending backend technology",
         "tasks": [
             {
-                "t_id": 1,
+                "_id": 1,
                 "title": "Learn Basics",
                 "notes": "Haven't started"
             }
         ]
     },
     {
-        "id":3,
+        "_id":3,
         "title":"Complete MERN Project",
         "description": "Hands-on experience on new tech stack",
         "tasks": [
             {
-                "t_id": 1,
+                "_id": 1,
                 "title": "Learn Basics",
                 "notes": "Haven't started"
             }

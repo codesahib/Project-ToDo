@@ -14,7 +14,7 @@ export default function TaskContainer(props) {
             {
                 props.tasks.length === 0 ? <h2 id="textNoTasks">No Tasks Recorded</h2> : props.tasks.map((task) => {
                     return(
-                        <Task key={task.t_id} task={task} delete_task={props.delete_task}/>
+                        <Task key={task._id} task={task} delete_task={props.delete_task}/>
                     )
                 })
             }

@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import axios from 'axios'
 import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -14,6 +16,25 @@ function App() {
 
   const [projects_list, setProjects] = useState(Data);
 
+  /* Settings for getting data from api
+  const [projects_list, setProjects] = useState();
+
+  const url="http://localhost:5000/api/v1/projects/"
+
+  const getAllProjects = () =>{
+    axios.get(`${url}`)
+    .then(response=>{
+      setProjects(response.data)
+    })
+    .catch(e=>console.log("Error fetching projects"))
+  }
+  
+  useEffect(() => {
+    getAllProjects();
+  }, []);
+
+  */
+ 
   function add_project(title, desc){
     let id = projects_list.length === 0 ? 1:projects_list[projects_list.length - 1].id + 1;
 
