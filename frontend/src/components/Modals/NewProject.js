@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import './NewProject.css'
 
 export default function NewProject(props) {
@@ -13,6 +14,27 @@ export default function NewProject(props) {
         }
         setTitle(""); setDesc("");
         props.add_project(title,desc);
+
+        /*
+        // POST request to add new project to DB
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                "Access-Control-Allow-Origin": "*",
+            }
+        };
+
+        axios.post("http://localhost:5000/api/v1/projects/create/",{
+            title: title,
+            description: desc
+        },axiosConfig)
+        .then((res) => {
+            console.log("[REACT] Data added successfully")
+        })
+        .catch((e)=>{
+            console.log(`Axios error: ${e}`)
+        })
+        */
     } 
 
     return (

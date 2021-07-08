@@ -17,7 +17,7 @@ function App() {
   const [projects_list, setProjects] = useState(Data);
 
   /* Settings for getting data from api
-  const [projects_list, setProjects] = useState();
+  const [projects_list, setProjects] = useState([]);
 
   const url="http://localhost:5000/api/v1/projects/"
 
