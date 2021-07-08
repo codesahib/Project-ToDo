@@ -15,6 +15,6 @@ app.get('/',(req,res) => {
 });
 
 app.use("/api/v1/projects", projects) // General procedure for api routes
-app.use("*", (req,res) => res.status(404).json({error: "Page not found"})) // Or app.all('*',(req,res) => {res.status(404).send('Not Found')})
+app.use("*", (req,res) => res.status(404).json({error: "[server] Page not found"})) // Or app.all('*',(req,res) => {res.status(404).send('Not Found')})
 
 export default app
