@@ -32,18 +32,27 @@ export default class ProjectsDAO{
     }
 
     static async getProjects(){
-        const query = {}
-        try{
-            const all_projects =  projectsModel.find(query)
-            return all_projects
-        }
-        catch(e){
-            console.log(`Unable to get projects. Error: ${e}`)
-            return {}
-        }
-        
+        var projects_list = []
+        projects_list = await projectsModel.find({},'_id title description tasks',function(err,res){
+            if(err) console.log("Cannot fetch projects list ")
+        })
+        return projects_list
+    }
 
-
+    static async createProject(this_project) {
+        try {
+            const newProject = new projectsModel(
+                {
+                    "title":this_project.title,
+                    "description": this_project.description,
+                    "tasks": []
+                }
+            )
+            await newProject.save()
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 }
 
