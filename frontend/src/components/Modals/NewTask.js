@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import './NewTask.css'
 
 export default function NewTask(props) {
@@ -12,6 +13,30 @@ export default function NewTask(props) {
             return;
         }
         props.add_task(title,notes);
+
+        /*
+        // POST request to add new project to DB
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                "Access-Control-Allow-Origin": "*",
+            }
+        };
+
+        axios.post("http://localhost:5000/api/v1/projects/add/task/",{
+            "project_title": props.project_title,
+            "task":{
+                title: title,
+                notes: notes
+            }
+        },axiosConfig)
+        .then((res) => {
+            console.log("[REACT] Data added successfully")
+        })
+        .catch((e)=>{
+            console.log(`Axios error: ${e}`)
+        })
+        */
     } 
 
     return (

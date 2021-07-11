@@ -67,7 +67,7 @@ export default function Project({project,delete_project}) {
             {showDesc && <div className="projectDescriptionContainer"><p>{proj.description}</p></div>}
             {taskContainer && <TaskContainer tasks={tasksList} delete_task={delete_task} show_modal={setTaskModal}/> }
         </div>
-        {taskModal && <NewTask add_task={add_task} show_modal={setTaskModal}/>}
+        {taskModal && <NewTask add_task={add_task} show_modal={setTaskModal} project_title={proj.title}/>}
         </>
     )
 }
