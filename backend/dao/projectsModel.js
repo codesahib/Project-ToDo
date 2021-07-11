@@ -3,14 +3,16 @@ import mongoose from 'mongoose'
 const projectSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true
+        required: true,
+        unique: [false, "Project already exists"]
     },
     description: String,
     tasks:[
         {
             title: {
                 type: String,
-                required: true
+                required: true,
+                unique: [true, "Task already exists"]
             },
             notes: String
         }
