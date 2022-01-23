@@ -3,6 +3,10 @@
         "_id":1,
         "title":"Learn React",
         "description": "This is required to level up the Web Development Game.",
+        "start_date":"2022-01-10",
+        "end_date":"",
+        "planned_start_date":"2022-01-01",
+        "planned_end_date":"2022-01-31",
         "tasks": [
             {
                 "_id": 1,
@@ -25,6 +29,10 @@
         "_id":2,
         "title":"Learn MongoDB",
         "description": "To learn a modern and trending backend technology",
+        "start_date":"",
+        "end_date":"",
+        "planned_start_date":"2022-01-15",
+        "planned_end_date":"2022-02-15",
         "tasks": [
             {
                 "_id": 1,
@@ -37,6 +45,10 @@
         "_id":3,
         "title":"Complete MERN Project",
         "description": "Hands-on experience on new tech stack",
+        "start_date":"",
+        "end_date":"",
+        "planned_start_date":"2022-03-15",
+        "planned_end_date":"2022-06-15",
         "tasks": [
             {
                 "_id": 1,

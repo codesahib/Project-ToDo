@@ -1,0 +1,16 @@
+.project-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 10.25rem;
+    width: 22.5rem;
+
+    border: 1px solid black;
+
+    margin: .625rem;
+}
+
+.project-filter:hover {
+    cursor: pointer;
+}

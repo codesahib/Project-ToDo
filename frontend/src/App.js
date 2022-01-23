@@ -3,6 +3,7 @@ import axios from 'axios'
 import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import FilterContainer from './components/FilterContainer'
 import ProjectContainer from './components/ProjectContainer'
 import NewProject from './components/Modals/NewProject'
 
@@ -62,6 +63,7 @@ function App() {
       <i>by Gursahib Singh</i>
     </div>
     <Navbar setUser={setUser} user={user}/>
+    <FilterContainer/>
     <ProjectContainer projects={projects_list} delete_project={delete_project} show_modal={setnewProjModal}/>
     {newProjModal && <NewProject add_project={add_project} show_modal={setnewProjModal}/> }
     {/* <Footer/> */}
